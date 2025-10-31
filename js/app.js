@@ -1,11 +1,26 @@
 /*-------------- Constants -------------*/
 // Word list and hints for the game
 const wordList = [
-    { word: "blaster", hint: "A weapon that shoots energy bolts." },
-    { word: "starship", hint: "A spacecraft used for interstellar travel." },
-    { word: "colony", hint: "A settlement established by people from another planet." },
-    { word: "navigation", hint: "The process of determining and planning a course." },
-    { word: "frontier", hint: "The outermost limit of an area of development or settlement." }
+    {
+        word: "blaster",
+        hint: "A weapon that shoots energy bolts."
+    },
+    {
+        word: "starship",
+        hint: "A spacecraft used for interstellar travel."
+    },
+    {
+        word: "colony",
+        hint: "A settlement established by people from another planet."
+    },
+    {
+        word: "navigation",
+        hint: "The process of determining and planning a course."
+    },
+    {
+        word: "frontier",
+        hint: "The outermost limit of an area of development or settlement."
+    }
 ];
 // Keyboard letters for on-screen keyboard
 const keyBoardLetters = [
@@ -23,6 +38,7 @@ let maxWrongGuesses = 6; // Maximum allowed wrong guesses
 let gameActive = false; // Flag to indicate if the game is active
 
 /*-------------- Cached Elements -------------*/
+const hangmanImage = document.getElementById('hangman-image'); // Hangman image element
 const wordContainer = document.getElementById('word-container'); // Container for the word display
 const keyboardContainer = document.getElementById('keyboard-container'); // Container for the on-screen keyboard
 const messageContainer = document.getElementById('message-container'); // Container for messages
@@ -49,6 +65,7 @@ function startGame() {
     gameActive = true;
     updateWordDisplay();
     updateKeyboard();
+    updateHangmanImage();
     messageContainer.textContent = '';
     hintContainer.textContent = '';
 }
@@ -66,6 +83,12 @@ function updateKeyboard() {
         keyboardContainer.appendChild(button);
     });
 }
+// Updates the hangman image based on wrong guesses
+function updateHangmanImage() {
+    hangmanImage.src = `images/hangman-${wrongGuesses}.svg`;
+
+}
+
 // Handles letter clicks on the keyboard
 function handleLetterClick(event) {
     if (!gameActive || event.target.tagName !== 'BUTTON') return;
@@ -80,17 +103,19 @@ function handleLetterClick(event) {
         }
         updateWordDisplay();
         if (!displayedWord.includes('_')) {
-            messageContainer.textContent = 'Congratulations! You won!';
+            messageContainer.textContent = 'Thank you for sparing my life!';
             gameActive = false;
         }
     } else {
         wrongGuesses++;
         if (wrongGuesses >= maxWrongGuesses) {
-            messageContainer.textContent = `Game Over! The word was: ${selectedWord}`;
+            messageContainer.textContent = `I'll now return to the stars. The word was: ${selectedWord}`;
             gameActive = false;
+        
         }
     }
     updateKeyboard();
+    updateHangmanImage();
 }
 // Shows a hint for the selected word
 function showHint() {
@@ -109,4 +134,10 @@ function resetGame() {
     keyboardContainer.innerHTML = '';
     messageContainer.textContent = '';
     hintContainer.textContent = '';
+    hangmanImage.src = `images/hangman-0.svg`;
 }
+/*-------------- Initialize Game -------------*/
+resetGame();
+startGame();
+
+   
