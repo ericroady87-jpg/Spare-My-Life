@@ -21,6 +21,26 @@ const wordList = [
         word: "frontier",
         hint: "The outermost limit of an area of development or settlement."
     }
+       {
+        word: "alien",
+        hint: "A being from another world."
+    },
+    {
+        word: "galaxy",
+        hint: "A massive system of stars, stellar remnants, interstellar gas, dust, and dark matter."
+    },
+    {
+        word: "asteroid",
+        hint: "A small rocky body orbiting the sun."
+    },
+    {
+        word: "terraform",
+        hint: "The process of modifying a planet's environment to make it habitable."
+    },
+    {
+        word: "space-station",
+        hint: "A large artificial satellite used as a long-term base for manned operations in space."
+    }
 ];
 // Keyboard letters for on-screen keyboard
 const keyBoardLetters = [
