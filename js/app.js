@@ -40,26 +40,22 @@ const wordList = [
     {
         word: "space-station",
         hint: "A large artificial satellite used as a long-term base for manned operations in space."
-    }
+    },
        {
-        word: "alien",
-        hint: "A being from another world."
+        word: "hyperspace",
+        hint: "A theoretical space in which faster-than-light travel is possible."
+    },   
+    {
+        word: "wormhole",
+        hint: "A hypothetical tunnel-like connection through space-time."
     },
     {
-        word: "galaxy",
-        hint: "A massive system of stars, stellar remnants, interstellar gas, dust, and dark matter."
+        word: "cybernetic",
+        hint: "Relating to or involving the integration of electronic and mechanical components with biological systems."
     },
     {
-        word: "asteroid",
-        hint: "A small rocky body orbiting the sun."
-    },
-    {
-        word: "terraform",
-        hint: "The process of modifying a planet's environment to make it habitable."
-    },
-    {
-        word: "space-station",
-        hint: "A large artificial satellite used as a long-term base for manned operations in space."
+        word: "robotics",
+        hint: "The branch of technology that deals with the design, construction, and operation of robots."
     }
 ];
 // Keyboard letters for on-screen keyboard

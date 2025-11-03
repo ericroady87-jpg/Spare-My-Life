@@ -7,6 +7,9 @@
     <title>Spare My Life</title>
     <script defer src="./js/app.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
     <style>
         body {
             background-image: url('https://images.stockcake.com/public/0/d/9/0d9a6332-dece-40ff-99eb-ead8c35cfcb0/mars-colony-dawn-stockcake.jpg');
@@ -18,31 +21,27 @@
 </head>
 
 <body>
-    <div class="game content">
+    <div class="game-content">
         <h1>Spare My Life</h1>
         <p>If I live or die, it's in your hands. But I'll always remember the stars.</p>
         <div id="word-container"></div>
-        <p></p>
-        <!-- image source -->
-        <div class="hangman-image-container">
-            <img id="hangman-image" src="images/hangman-0.svg" alt="Hangman drawing">
+        <div id="message-container"></div>
+        <div id="hint-container"></div>
+        <div id="flex">
+            <!-- image source -->
+            <div class="hangman-image-container">
+                <img id="hangman-image" src="images/hangman-0.svg" alt="Hangman drawing">
+            </div>
+            <!-- keyboard lettering sets -->
+            <div id="keyboard-container"></div>
         </div>
-        <p></p>
-
-
-        <!-- keyboard lettering sets -->
-        <div class="keyboard-container"></div>
-        <div id="keyboard-container"></div>
-
     </div>
-    <p></p>
     <!-- game control buttons -->
     <div class="game-buttons">
         <button id="start-game-button">Start Game</button>
         <button id="reset-button">Reset Game</button>
         <button id="hint-button">Show Hint</button>
-        <div id="message-container"></div>
-        <div id="hint-container"></div>
+
     </div>
     <script src="./js/app.js"></script>
 </body>
