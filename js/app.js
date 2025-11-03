@@ -145,7 +145,7 @@ function handleLetterClick(event) {
     } else {
         wrongGuesses++;
         if (wrongGuesses >= maxWrongGuesses) {
-            messageContainer.textContent = `I'll now return to the stars. The word was: ${selectedWord}`;
+            messageContainer.textContent = `I'll now return to the heavens. The word was: ${selectedWord}`;
             gameActive = false;
 
         }
