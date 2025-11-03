@@ -90,7 +90,9 @@ Link To The Game: https://ericroady87-jpg.github.io/Spare-My-Life/
 
    c. Updating the WORDLIST by adding more words.
 
-    d. Updating the HANGMAN imgs to better match the overall theme of the game.
+   d. Updating the HANGMAN imgs to better match the overall theme of the game.
+
+   e. Better compatibility for mobile devices
 
  (potential updates)
 
