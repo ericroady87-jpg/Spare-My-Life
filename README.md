@@ -1,4 +1,5 @@
 #Spare-My-Life
+Spare My Life.jpg
 
 1. Back Story:
    
@@ -97,5 +98,6 @@ a. difficulty settings ie. shorter words = easy, longer and more complex words =
 b. Story mode
 
 c. High Score Tracker
+
 
 
