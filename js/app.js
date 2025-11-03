@@ -38,7 +38,7 @@ const wordList = [
         hint: "The process of modifying a planet's environment to make it habitable."
     },
     {
-        word: "space-station",
+        word: "spacestation",
         hint: "A large artificial satellite used as a long-term base for manned operations in space."
     },
        {
