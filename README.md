@@ -10,7 +10,7 @@
 
 Link To The Game:
 
-    A.  START GAME: 
+    A.  START GAME:
         Click the start game button to start the game.
         A theme related word from a predetermined list will randomly generate as the word to be guessed.
 
@@ -50,18 +50,19 @@ Link To The Game:
                 change spaceman’s additional limbs per incorrect selection
 
 3. Attributions
+   
     Background image: Photo by <a href="https://stockcake.com/i/mars-colony-dawn_1504460_1169093">Stockcake</a>
 
     Hangman images: <a href= "https://www.codingnepalweb.com/build-hangman-game-html-javascript/">CodingNepal</a>
 
     Cover Art: AI generated Image, Using Google Gemini for Android -SELF-
 
-4. Coding Languages and Technologies Used
+5. Coding Languages and Technologies Used
     a. HTML - Body and Stucture
     b. Javascript - Game logic, Win/Loss, Wordlist
     c. CSS - styling and layout
 
-5. Plans For the Future:
+6. Plans For the Future:
     a. Further Styling for buttons (location, color, ect.)
     b. Adding audio, for a more interactive experience.
     c. Updating the WORDLIST by adding more words.
@@ -71,3 +72,4 @@ Link To The Game:
                                    longer and more complex words = hard
         b. Story mode
         c. High Score Tracker
+
