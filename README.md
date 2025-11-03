@@ -10,7 +10,7 @@ Spare My Life.jpg
 
 3. How to get Started:
 
-Link To The Game:
+Link To The Game: https://ericroady87-jpg.github.io/Spare-My-Life/
 
      A.  START GAME:
  
