@@ -4,6 +4,7 @@ body {
     font-style: normal;
 
 }
+
 .game-content {
     display: flex;
     flex-direction: column;
@@ -11,16 +12,6 @@ body {
     justify-content: center;
 
 }
-@media screen and (max-width: 800px) {
-      body {
-        font-size: 14px;
-      }
-      .game-content {
-        width: 100%;
-        padding: auto;
-      }
-    }
-
 
 h1 {
     display: flex;
@@ -87,6 +78,7 @@ p {
     font-size: 2rem;
     margin: 10px 0;
 }
+
 .game-buttons {
     display: flex;
     justify-content: center;
